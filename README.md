@@ -1,4 +1,4 @@
-# JSON SERVER [Click to open github page](https://github.com/typicode/json-server)
+# JSON SERVER [Click to open the documentation](https://github.com/typicode/json-server)
 
 # Steps
 ```sh
@@ -8,27 +8,27 @@
 
 ### **Get All Users**
 ```
-http://localhost:3000/users
+ - http://localhost:3000/users
 ```
 
 ### **Get All Companies**
 ```
-http://localhost:3000/companies
+ - http://localhost:3000/companies
 ```
 
 ### **Get Single User**
 ```
-http://localhost:3000/users/1
+ - http://localhost:3000/users/1
 ```
 
 ### **Get Single Company**
 ```
-http://localhost:3000/companies/1
+ - http://localhost:3000/companies/1
 ```
 
 ### **Get All Users Of a Company**
 ```
-http://localhost:3000/companies/1/users
+ - http://localhost:3000/companies/1/users
 ```
 
 ### **Filter Companies By Name**
@@ -39,7 +39,7 @@ http://localhost:3000/companies/1/users
 
 ### **Pagination & Limit**
 ```
-http://localhost:3000/users?_page=1&_limit=2
+ - http://localhost:3000/users?_page=1&_limit=2
 ```
 
 ### **Sorting**
@@ -65,4 +65,11 @@ http://localhost:3000/users?_page=1&_limit=2
 #### *User Belongs To Company*
 ```
 - http://localhost:3000/users?_expand=company
+```
+
+### **Authenticate**
+> curl -d "token=abcdef-1234-5678" http://localhost:3000/authenticate
+```sh
+- [POST] http://localhost:3000/authenticate
+- [GET] http://localhost:3000/authenticate
 ```
